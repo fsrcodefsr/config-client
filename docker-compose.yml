@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  config-client:
+  config-cli:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: config-client-container
+    container_name: config-client
     environment:
       - SPRING_PROFILES_ACTIVE=dev
     ports:

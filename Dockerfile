@@ -13,7 +13,7 @@ RUN useradd -m springuser
 
 # Устанавливаем рабочую директорию и копируем приложение
 WORKDIR /app
-COPY --from=build /app/target/config-client-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/*.jar app.jar
 
 # Изменяем права доступа к файлам и директориям
 RUN chown -R springuser:springuser /app
