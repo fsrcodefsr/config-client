@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: config-client
+  config:
+    import: optional:configserver:http://config-service-container:8888
