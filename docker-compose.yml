@@ -1,15 +1,19 @@
 version: '3.8'
 
 services:
-  config-cli:
+
+  config_cli:
     build:
       context: .
       dockerfile: Dockerfile
+    image: config-client:1.0.0
     container_name: config-client
     environment:
-      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_PROFILES_ACTIVE=${PROFILE}
+      - CONFIG_CLIENT_PORT=${CONFIG_CLIENT_PORT}
+      - INTERNAL_PORT=${CONFIG_CLIENT_PORT}
     ports:
-      - "8080:8080"
+      - "${CONFIG_CLIENT_PORT}:${CONFIG_CLIENT_PORT}"
     networks:
       - my-network
 
