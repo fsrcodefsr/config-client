@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Запрос к конфиг-серверу для получения порта
-CONFIG_SERVER_URL="http://localhost:8888"
+CONFIG_SERVER_URL="http://config-service:8888"
 APPLICATION_NAME="config-client"
 PROFILE="dev"
 
