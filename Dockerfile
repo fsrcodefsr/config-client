@@ -1,5 +1,8 @@
 # Stage 1: Build
 FROM maven:3.8.5-openjdk-17 AS build
+
+COPY settings.xml /root/.m2/settings.xml
+
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src

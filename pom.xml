@@ -75,4 +75,29 @@
 		</plugins>
 	</build>
 
+	<!-- <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://nexus-local:8081/repository/maven-releases/</url>
+        </repository>
+        <repository>
+            <id>nexus-snapshots</id>
+            <url>http://nexus-local:8081/repository/maven-snapshots/</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://nexus-local:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://nexus-local:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement> -->
+
 </project>
